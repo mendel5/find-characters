@@ -1,19 +1,21 @@
 # find-characters
 How to find files with "forbidden" characters in their names on a Linux system. Forbidden characters could be non-printable or non-ASCII characters.
 
-## Part 1
+## Parts
 Copy and paste these commands in the Linux Terminal.
 
-```
-LC_ALL=C find . -name '*[! -~]*'
-
-The "forbidden" characters are returned as questions marks, e.g., "??".
-```
-
+### Part 1
 ```
 LC_COLLATE=C find . -name '*[! -~]*'
 
 The "forbidden" characters are returned as they are.
+```
+
+### Part 2
+```
+LC_ALL=C find . -name '*[! -~]*'
+
+The "forbidden" characters are returned as questions marks, e.g., "??".
 ```
 
 ```
