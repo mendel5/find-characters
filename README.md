@@ -1,7 +1,7 @@
 # find-characters
 How to find files with "forbidden" characters in their names on a Linux system. Forbidden characters could be non-printable or non-ASCII characters.
 
-## Parts
+## Part A
 Copy and paste these commands in the Linux Terminal.
 
 ### Part 1
@@ -26,3 +26,7 @@ This might not work as well as the two other ones.
 
 Sources:
 - https://www.baeldung.com/linux/find-special-character-filenames
+
+## Part B
+Another good idea could be to list all filenames with a command like `tree`, then save this output to a file, then analyze this file with another command.
+When it is done like this, the file system does not have to be scanned so frequently because scanning the whole filesystem takes a lot of time.
